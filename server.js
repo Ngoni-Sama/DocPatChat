@@ -21,8 +21,11 @@ app.use('/static', express.static(__dirname + '/static'));
 app.get('/', function(request, response) {
   response.sendFile(path.join(__dirname, 'home.html'));
 });
-app.get('/index.html', function(request, response) {
-  response.sendFile(path.join(__dirname, 'index.html'));
+app.get('/doctor.html', function(request, response) {
+  response.sendFile(path.join(__dirname, 'doctor.html'));
+});
+app.get('/patient.html', function(request, response) {
+  response.sendFile(path.join(__dirname, 'patient.html'));
 });
 var content;
 // First I want to read the file
